@@ -1,0 +1,31 @@
+body {
+    background-color: yellow;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.1fr 1fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-template-areas:
+      ". header ."
+      "logo survey logo-a"
+      "logo surveys .";
+  }
+  h1 {
+    text-align: center;
+    grid-area: header;
+  }
+  img {
+    width: 30em;
+    grid-area: logo;
+  }
+  .center {
+    grid-area: survey;
+  }
+  .side {
+    grid-area: logo-a;
+    text-align: center;
+  }
+  .bottom {
+    grid-area: surveys;
+  }
+  
